@@ -12,7 +12,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.448d96d7.css">
-<script src="/assets/js/runtime~main.3f017de7.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.46e93979.js" defer="defer"></script>
 <script src="/assets/js/main.29f45113.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -42,7 +42,7 @@
 <div class="simulator-callout"><p><strong>No IBM Quantum account?</strong> Enable <a href="/jupyter-settings#simulator-mode">Simulator Mode</a> in Settings to run all code without signing up.</p></div>
 <div class="tutorial-cards"><a class="tutorial-card tutorial-card--featured" href="/learning/courses/basics-of-quantum-information/single-systems/introduction"><span class="tutorial-card__tag tutorial-card__tag--course">Course</span><span class="tutorial-card__title">Basics of Quantum Information</span><span class="tutorial-card__desc">Start here — structured course from single systems to entanglement</span></a><a class="tutorial-card" href="/tutorials/hello-world"><span class="tutorial-card__tag tutorial-card__tag--tutorial">Tutorial</span><span class="tutorial-card__title">Hello World: Your First Quantum Circuit</span><span class="tutorial-card__desc">doQumentation&#x27;s own intro — build a Bell state, run it three ways</span></a><a class="tutorial-card" href="/guides/hello-world"><span class="tutorial-card__tag tutorial-card__tag--guide">Guide</span><span class="tutorial-card__title">Hello World</span><span class="tutorial-card__desc">IBM&#x27;s getting-started guide — your first Qiskit program</span></a><a class="tutorial-card" href="/tutorials/chsh-inequality"><span class="tutorial-card__tag tutorial-card__tag--tutorial">Tutorial</span><span class="tutorial-card__title">CHSH Inequality</span><span class="tutorial-card__desc">Run a Bell test on a quantum computer</span></a><a class="tutorial-card" href="/tutorials/advanced-techniques-for-qaoa"><span class="tutorial-card__tag tutorial-card__tag--tutorial">Tutorial</span><span class="tutorial-card__title">Advanced Techniques for QAOA</span><span class="tutorial-card__desc">Improve QAOA performance at scale with advanced optimization techniques</span></a></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-execution">Code execution<a href="#code-execution" class="hash-link" aria-label="رابط مباشر إلى Code execution" title="رابط مباشر إلى Code execution" translate="no">​</a></h2>
-<p>Click <strong>Run</strong> on any code block. The first click starts a free Jupyter kernel via <a href="https://mybinder.org" target="_blank" rel="noopener noreferrer" class="">Binder</a> (1–2 min). After that, runs are instant.</p>
+<p>Click <strong>Run</strong> on any code block. The first click starts a Jupyter kernel via <a href="https://mybinder.org" target="_blank" rel="noopener noreferrer" class="">Binder</a> or <a class="" href="/jupyter-settings#code-engine">IBM Code Engine</a>. After that, runs are instant.</p>
 <ul>
 <li class="">
 <p><strong>Simulator Mode (no account needed)</strong> — Enable <a class="" href="/jupyter-settings#simulator-mode">Simulator Mode</a> to run all notebooks with AerSimulator or noise-model FakeBackends. Zero setup required.</p>
@@ -51,13 +51,14 @@
 <p><strong>IBM Quantum Hardware</strong> — Enter your API token and CRN in <a class="" href="/jupyter-settings#ibm-quantum">Settings</a> once — credentials are auto-injected on every run. <a href="https://quantum.cloud.ibm.com/registration" target="_blank" rel="noopener noreferrer" class="">Create a free account</a> if you don&#x27;t have one.</p>
 </li>
 </ul>
-<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Available execution backends</summary><div><div class="collapsibleContent_i85q"><p>Every tutorial has executable code blocks. Click <strong>Run</strong> to execute them using one of three backends:</p><ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Available execution backends</summary><div><div class="collapsibleContent_i85q"><p>Every tutorial has executable code blocks. Click <strong>Run</strong> to execute them using one of four backends:</p><ol>
 <li class=""><strong>Binder</strong> (default on GitHub Pages) — Free remote Jupyter kernel via <a href="https://mybinder.org" target="_blank" rel="noopener noreferrer" class="">mybinder.org</a></li>
+<li class=""><strong>IBM Code Engine</strong> — Serverless Jupyter on your IBM Cloud account. Cold start in seconds instead of minutes. <a class="" href="/jupyter-settings#code-engine">Set up</a></li>
 <li class=""><strong>Local Jupyter (Docker / RasQberry)</strong> — Connects to the local Jupyter server with Qiskit pre-installed</li>
 <li class=""><strong>Custom server</strong> — Point to any Jupyter endpoint in <a class="" href="/jupyter-settings#advanced">Settings</a></li>
-</ol></div></div></details>
+</ol><p>When multiple backends are available, choose which one to use from <a class="" href="/jupyter-settings#backend-selection">Settings</a>.</p></div></div></details>
 <details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Deployment options</summary><div><div class="collapsibleContent_i85q"><p>doQumentation is available as:</p><ul>
-<li class=""><strong><a href="https://doqumentation.org" target="_blank" rel="noopener noreferrer" class="">GitHub Pages</a></strong> — Static site with <a href="https://mybinder.org" target="_blank" rel="noopener noreferrer" class="">Binder</a> for remote code execution</li>
+<li class=""><strong><a href="https://doqumentation.org" target="_blank" rel="noopener noreferrer" class="">GitHub Pages</a></strong> — Static site with <a href="https://mybinder.org" target="_blank" rel="noopener noreferrer" class="">Binder</a> or <a class="" href="/jupyter-settings#code-engine">IBM Code Engine</a> for remote code execution</li>
 <li class=""><strong><a href="https://github.com/JanLahmann/doQumentation/pkgs/container/doqumentation" target="_blank" rel="noopener noreferrer" class="">Docker</a></strong> — Full stack locally, offline capable</li>
 <li class=""><strong><a href="https://rasqberry.org/" target="_blank" rel="noopener noreferrer" class="">RasQberry</a></strong> — Self-hosted on Raspberry Pi with local Jupyter kernel</li>
 </ul></div></div></details>
