@@ -14,7 +14,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.eb9706c8.css">
-<script src="/assets/js/runtime~main.bdaea28b.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4953b2d1.js" defer="defer"></script>
 <script src="/assets/js/main.eac5af3c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -64,11 +64,11 @@
 لهذا عدة تداعيات:</p>
 <ul>
 <li class="">إضافة Slurm مسؤولة عن تعدد المستأجرين (ضمان ألا يرى المستخدمون نتائج مهام مستخدمين آخرين)</li>
-<li class="">جانب حشد HPC مسؤول عن التحقق من المستخدمين (من يُسمح له بالوصول إلى QPU) وضمان الوصول المناسب</li>
+<li class="">جانب عنقود HPC مسؤول عن التحقق من المستخدمين (من يُسمح له بالوصول إلى QPU) وضمان الوصول المناسب</li>
 <li class="">تُدار سعة QPU وأولوية استخدامه حصريًا عبر Slurm؛ لا يوجد جدولة أخرى للمستخدمين خارج Slurm</li>
 </ul>
 <h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="user-scope-ibm">نطاق المستخدم<a href="#user-scope-ibm" class="hash-link" aria-label="رابط مباشر إلى نطاق المستخدم" title="رابط مباشر إلى نطاق المستخدم" translate="no">​</a></h5>
-<p>لا تُكشف مسارات التنفيذ لمدير HPC أو المستخدم مباشرة.
+<p>لا تُكشف مسارات التنف يذ لمدير HPC أو المستخدم مباشرة.
 بدلًا من ذلك، أثناء وقت التشغيل، هناك وضعان مختلفان يمكن لمستخدمي HPC تحديدهما:</p>
 <ul>
 <li class=""><code>exclusive=true</code> يحدد أنه لا يمكن لأي مهمة أخرى استخدام المورد في نفس الوقت. تحصل مهمة الوضع الحصري على جميع مسارات التنفيذ ولا يمكنها التشغيل في نفس وقت مهمة غير حصرية</li>
@@ -86,7 +86,7 @@
 </ul>
 <p>تحدد هذه التفاصيل المستخدمَ ونسخةَ الخدمة التي يُستخدم بموجبها Qiskit Runtime.
 وفقًا لذلك، تأخذ جدولة منصة IBM Quantum® بعين الاعتبار قدرات المستخدم ونسخة الخدمة للجدولة.</p>
-<p>في الوقت الحالي، يتعين على المستخدمين توفير التفاصيل المذكورة أعلاه (لا يوجد وصول كمي مشترك على مستوى الحشد).</p>
+<p>في الوقت الحالي، يتعين على المستخدمين توفير التفاصيل المذكورة أعلاه (لا يوجد وصول كمي مشترك على مستوى العنقود).</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="pasqal-cloud-services">خدمات Pasqal السحابية<a href="#pasqal-cloud-services" class="hash-link" aria-label="رابط مباشر إلى خدمات Pasqal السحابية" title="رابط مباشر إلى خدمات Pasqal السحابية" translate="no">​</a></h4>
 <h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="hpc-admin-scope-pasqal">نطاق مدير HPC<a href="#hpc-admin-scope-pasqal" class="hash-link" aria-label="رابط مباشر إلى نطاق مدير HPC" title="رابط مباشر إلى نطاق مدير HPC" translate="no">​</a></h5>
 <p>لا يوجد إعداد محدد مطلوب من مديري HPC لاستخدام PCS.</p>
