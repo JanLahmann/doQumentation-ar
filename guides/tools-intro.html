@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.491d1738.css">
-<script src="/assets/js/runtime~main.fffce55f.js" defer="defer"></script>
-<script src="/assets/js/main.3b1edae6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3d962714.js" defer="defer"></script>
+<script src="/assets/js/main.b7fe2be7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -86,7 +86,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-addons">إضافات Qiskit<a href="#qiskit-addons" class="hash-link" aria-label="رابط مباشر إلى إضافات Qiskit" title="رابط مباشر إلى إضافات Qiskit" translate="no">​</a></h2>
 <p>إضافات Qiskit هي مجموعة من القدرات البحثية لاكتشاف الخوارزميات على نطاق الاستخدام الفعلي. تبني هذه القدرات على الأساس القوي من أدوات Qiskit لإنشاء الخوارزميات الكمومية وتشغيلها. الإضافات هي مكونات برمجية معيارية تنضم إلى سير العمل لتوسيع نطاق أو تصميم خوارزميات كمومية جديدة. لمعرفة المزيد عن مجموعة إضافات Qiskit المتاحة وكيفية البدء باستخدامها، قم بزيارة <a class="" href="/guides/addons">التوثيق</a>.</p>
 <p>هناك عدد من الإضافات بحسب القدرة البحثية التي تهتم بها. يمكن تثبيت كل منها باستخدام pip.</p>
-<p><a class="" href="/guides/qiskit-addons-sqd">التقطير الكمومي القائم على العينات (SQD)</a>:</p>
+<p><a class="" href="/guides/qiskit-addons-sqd">القطرنة الكمومية القائم على العينات (SQD)</a>:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip </span><span class="token function" style="color:#d73a49">install</span><span class="token plain"> qiskit-addon-sqd</span><br></span></code></pre></div></div>
 <p><a class="" href="/guides/qiskit-addons-aqc">التجميع الكمومي التقريبي (AQC)</a>:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip </span><span class="token function" style="color:#d73a49">install</span><span class="token plain"> qiskit-addon-aqc-tensor</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">quimb-jax</span><span class="token punctuation" style="color:#393A34">]</span><br></span></code></pre></div></div>
@@ -98,7 +98,7 @@
 <p>هناك كثير من المشاريع مفتوحة المصدر خارج Qiskit التي تستخدم اسم &quot;Qiskit&quot; لكنها ليست جزءاً من Qiskit نفسه؛ بل إنها تتواصل مع Qiskit ويمكنها توفير وظائف إضافية قيّمة لتكملة سير عمل Qiskit الأساسي. بعض هذه المشاريع تديرها فرق IBM Quantum، بينما يدعم مجتمع المصادر المفتوحة الأوسع مشاريع أخرى. صُمّم Qiskit SDK بطريقة معيارية وقابلة للتوسع لتسهيل إنشاء المطورين لمثل هذه المشاريع التي توسّع قدراته.</p>
 <p>بعض المشاريع الشائعة في النظام البيئي لـ Qiskit:</p>
 <ul>
-<li class=""><strong>Qiskit Aer</strong> (<code>qiskit-aer</code>) - حزمة لمحاكيات الحوسبة الكمومية بنماذج ضوضاء واقعية. توفر واجهات لتشغيل الدوائر الكمومية مع الضوضاء أو بدونها باستخدام طرق محاكاة متعددة. تديرها IBM Quantum.</li>
+<li class=""><strong>Qiskit Aer</strong> (<code>qiskit-aer</code>) - حزمة لمحاكيات الحوسبة الكمومية بنماذج ضوضاء واقعية. توفر واجهات لتشغيل الدوائر الكمومية مع الضوضاء أو بدونها باستخدام طرق محاكاة متعددة. تديره ا IBM Quantum.</li>
 <li class=""><strong>qBraid SDK</strong> (<code>qbraid</code>) - إطار تشغيل كمومي مستقل عن المنصة لكل من مزودي البرامج والأجهزة الكمومية، مصمم لتبسيط الإدارة الكاملة لدورة حياة المهام الكمومية — من تحديد مواصفات البرنامج إلى إرسال المهام ووصولاً إلى المعالجة اللاحقة وتصور النتائج. تديره qBraid.</li>
 <li class=""><strong>mthree</strong> <code>mthree</code> - حزمة لتطبيق M3 (تخفيف القياس بدون مصفوفة)، وهو تقنية تخفيف قياس تحلّ لاحتمالات القياس المصححة باستخدام خطوة تقليص الأبعاد تليها إما تحليل LU المباشر أو طريقة تكرارية مسبقة التكييف تتقارب اسمياً في O(1) خطوة، ويمكن حسابها بالتوازي. تديرها IBM Quantum.</li>
 </ul>
