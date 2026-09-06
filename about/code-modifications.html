@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e0d2eccc.css">
-<script src="/assets/js/runtime~main.c65af5f8.js" defer="defer"></script>
-<script src="/assets/js/main.1d83660e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cac9af4f.js" defer="defer"></script>
+<script src="/assets/js/main.256b066d.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/about/code-modifications" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/about/code-modifications" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -37,13 +37,17 @@ Engine</strong>، تحصل على نسخة من دفتر الملاحظات ال
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-prerequisites-cell-code">2. خلية المتطلبات الأساسية (كود)<a href="#2-prerequisites-cell-code" class="hash-link" aria-label="رابط مباشر إلى 2. خلية المتطلبات الأساسية (كود)" title="رابط مباشر إلى 2. خلية المتطلبات الأساسية (كود)" translate="no">​</a></h3>
 <p>تُدرج خلية كود بعد الإشعار تقوم بما يلي:</p>
 <ul>
-<li class=""><strong>تثبيت الحزم المطلوبة</strong> (<code>qiskit</code>، <code>qiskit-aer</code>، <code>qiskit-ibm-runtime</code>،
+<li class="">
+<p><strong>تثبيت الحزم المطلوبة</strong> (<code>qiskit</code>، <code>qiskit-aer</code>، <code>qiskit-ibm-runtime</code>،
 <code>pylatexenc</code>، إضافةً إلى أي حزم خاصة بالدرس يتم رصدها عبر فحص
 الاستيراد). يُتجاوَز التثبيت إذا كانت الحزم موجودة مسبقًا (مثلًا على
-Binder أو Code Engine حيث تكون مثبّتة مسبقًا).</li>
-<li class=""><strong>توفير قالب بيانات اعتماد معلّق</strong> لـ IBM Quantum، حتى يتمكن المستخدمون
+Binder أو Code Engine حيث تكون مثبّتة مسبقًا).</p>
+</li>
+<li class="">
+<p><strong>توفير قالب بيانات اعتماد معلّق</strong> لـ IBM Quantum، حتى يتمكن المستخدمون
 الراغبون في التشغيل على أجهزة حقيقية من إلغاء التعليق وإدخال مفتاح API
-الخاص بهم.</li>
+الخاص بهم.</p>
+</li>
 </ul>
 <p>على Google Colab، تُنفَّذ هذه الخلية تلقائيًا عند فتح دفتر الملاحظات عبر
 علامة البيانات الوصفية <code>cell_execution_strategy: setup</code>.</p>
@@ -54,26 +58,42 @@ Binder أو Code Engine حيث تكون مثبّتة مسبقًا).</li>
 <p>تُحوَّل الدروس التعليمية المعروضة على هذا الموقع من دفاتر الملاحظات الأصلية
 بصيغة <code>.ipynb</code> أو ملفات <code>.mdx</code>. تُطبَّق التحويلات التالية:</p>
 <ul>
-<li class=""><strong>إضافة أسطر <code>pip install</code></strong> إلى كتل كود Python التي تستورد حزم خارجية،
-مما يتيح التنفيذ بنقرة واحدة عبر thebelab.</li>
-<li class=""><strong>قسم استطلاع IBM Tutorial</strong>: تُضاف ملاحظة توضح أن الاستطلاع يعود إلى
+<li class="">
+<p><strong>إضافة أسطر <code>pip install</code></strong> إلى كتل كود Python التي تستورد حزم خارجية،
+مما يتيح التنفيذ بنقرة واحدة عبر thebelab.</p>
+</li>
+<li class="">
+<p><strong>قسم استطلاع IBM Tutorial</strong>: تُضاف ملاحظة توضح أن الاستطلاع يعود إلى
 IBM Quantum مع رابط إلى مشكلات GitHub الخاصة بـ doQumentation لتلقي
-الملاحظات المتعلقة بالموقع.</li>
-<li class=""><strong>أداة التغذية الراجعة</strong>: تُضاف أداة &quot;هل كان هذا مفيدًا؟&quot; في أسفل كل درس
-تعليمي، يتم تتبعها عبر تحليلات Umami الصديقة للخصوصية.</li>
-<li class=""><strong>إصلاحات بناء جملة MDX</strong>: يُصحَّح تلقائيًا الأقواس المعقوفة وتسلسل
-العناوين ومشكلات توافق JSX من أجل عرض Docusaurus.</li>
-<li class=""><strong>OpenInLabBanner</strong>: يُحقن شريط تفاعلي أسفل العنوان يحتوي على أزرار لفتح
-دفتر الملاحظات في Colab أو Binder أو Code Engine.</li>
+الملاحظات المتعلقة بالموقع.</p>
+</li>
+<li class="">
+<p><strong>أداة التغذية الراجعة</strong>: تُضاف أداة &quot;هل كان هذا مفيدًا؟&quot; في أسفل كل درس
+تعليمي، يتم تتبعها عبر تحليلات Umami الصديقة للخصوصية.</p>
+</li>
+<li class="">
+<p><strong>إصلاحات بناء جملة MDX</strong>: يُصحَّح تلقائيًا الأقواس المعقوفة وتسلسل
+العناوين ومشكلات توافق JSX من أجل عرض Docusaurus.</p>
+</li>
+<li class="">
+<p><strong>OpenInLabBanner</strong>: يُحقن شريط تفاعلي أسفل العنوان يحتوي على أزرار لفتح
+دفتر الملاحظات في Colab أو Binder أو Code Engine.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-not-modified">ما الذي لا يُعدَّل<a href="#what-is-not-modified" class="hash-link" aria-label="رابط مباشر إلى ما الذي لا يُعدَّل" title="رابط مباشر إلى ما الذي لا يُعدَّل" translate="no">​</a></h2>
 <ul>
-<li class=""><strong>محتوى الدرس التعليمي نفسه</strong> (الشروح ومنطق الكود والمخرجات) لا يُغيَّر
-أبدًا.</li>
-<li class=""><strong>نسب المؤلف الأصلي</strong> محفوظ عبر بيانات frontmatter وملف NOTICE (رخص
-Apache 2.0 / CC BY-SA 4.0).</li>
-<li class=""><strong>لا يُحقن أي كود قياس أو تتبع</strong> في دفاتر الملاحظات. تعمل التحليلات
-(Umami) على موقع doQumentation فقط، ولا تعمل في دفاتر الملاحظات المُصدَّرة.</li>
+<li class="">
+<p><strong>محتوى الدرس التعليمي نفسه</strong> (الشروح ومنطق الكود والمخرجات) لا يُغيَّر
+أبدًا.</p>
+</li>
+<li class="">
+<p><strong>نسب المؤلف الأصلي</strong> محفوظ عبر بيانات frontmatter وملف NOTICE (رخص
+Apache 2.0 / CC BY-SA 4.0).</p>
+</li>
+<li class="">
+<p><strong>لا يُحقن أي كود قياس أو تتبع</strong> في دفاتر الملاحظات. تعمل التحليلات
+(Umami) على موقع doQumentation فقط، ولا تعمل في دفاتر الملاحظات المُصدَّرة.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="source-code">الكود المصدري<a href="#source-code" class="hash-link" aria-label="رابط مباشر إلى الكود المصدري" title="رابط مباشر إلى الكود المصدري" translate="no">​</a></h2>
 <p>جميع التحويلات مُطبَّقة في

@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e0d2eccc.css">
-<script src="/assets/js/runtime~main.c65af5f8.js" defer="defer"></script>
-<script src="/assets/js/main.1d83660e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cac9af4f.js" defer="defer"></script>
+<script src="/assets/js/main.256b066d.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="swg" href="https://swg.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bad.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="bar" href="https://bar.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="ksh" href="https://ksh.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="nds" href="https://nds.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="gsw" href="https://gsw.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://sax.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://bln.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="de-AT" href="https://aut.doqumentation.org/guides/configure-qiskit-local" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/configure-qiskit-local" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -32,14 +32,30 @@
 <p>بشكل افتراضي، يكون هذا الملف في <code>~/.qiskit/settings.conf</code>، غير أنه يمكن تجاوز هذا المسار باستخدام متغير البيئة <code>QISKIT_SETTINGS</code>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="available-options">الخيارات المتاحة<a href="#available-options" class="hash-link" aria-label="رابط مباشر إلى الخيارات المتاحة" title="رابط مباشر إلى الخيارات المتاحة" translate="no">​</a></h2>
 <ul>
-<li class=""><code>circuit_drawer</code>: يغيّر النظام الافتراضي لرسم الدوائر. يمكن ضبطه على <code>latex</code> أو <code>mpl</code> أو <code>text</code> أو <code>latex_source</code>. يُستخدم هذا النظام عندما لا يكون معامل الإخراج <code>output</code> محددًا صراحةً.</li>
-<li class=""><code>circuit_mpl_style</code>: ورقة الأنماط الافتراضية المستخدمة لنظام إخراج mpl في رسم الدوائر. القيم الصالحة هي <code>default</code> أو <code>bw</code>.</li>
-<li class=""><code>circuit_mpl_style_path</code>: المسارات التي يستخدمها رسم الدوائر للبحث عن أوراق أنماط JSON عند استخدام وضع إخراج mpl.</li>
-<li class=""><code>state_drawer</code>: يُستخدم لتغيير النظام الافتراضي لأساليب رسم تصور الحالة. القيم الصالحة هي <code>repr</code> أو <code>text</code> أو <code>latex</code> أو <code>latex_source</code> أو <code>qsphere</code> أو <code>hinton</code> أو <code>bloch</code>. عندما لا يكون معامل الإخراج <code>output</code> محددًا صراحةً في أسلوب <a class="" href="/api/qiskit/qiskit.quantum_info.DensityMatrix#densitymatrix">qiskit.quantum_info.DensityMatrix.draw</a>، يُستخدم أسلوب الإخراج المحدد.</li>
-<li class=""><code>transpile_optimization_level</code>: يغيّر مستوى التحسين الافتراضي لـ <a class="" href="/api/qiskit/compiler#transpile">qiskit.compiler.transpile</a>. حدد عددًا صحيحًا من 0 إلى 3.</li>
-<li class=""><code>parallel</code>: يحدد ما إذا كان معالجة Python المتوازية مفعّلة للعمليات التي تدعم التشغيل المتوازي. على سبيل المثال، تحويل كائنات <a class="" href="/api/qiskit/qiskit.circuit.QuantumCircuit#quantumcircuit-class">qiskit.circuit.QuantumCircuit</a> متعددة. يمكن تجاوز هذا الإعداد بمتغير البيئة <code>QISKIT_PARALLEL</code>. حدد قيمة منطقية.</li>
-<li class=""><code>num_processes</code>: الحد الأقصى لعدد العمليات المتوازية التي يتم تشغيلها للعمليات المتوازية إذا كان التنفيذ المتوازي مفعّلًا. يمكن تجاوز هذا الإعداد بمتغير البيئة <code>QISKIT_NUM_PROCS</code>. حدد عددًا صحيحًا أكبر من <code>0</code>.</li>
-<li class=""><code>min_qpy_version</code>: سيرفض تحميل QPY الملفات التي تحمل إصداراً من QPY أدنى من الإصدار المحدد هنا. يمكن استخدام هذا الخيار لتقييد إصدارات QPY المسموح بها عند اكتشاف مشكلات أمنية في إلغاء تسلسل إصدارات QPY القديمة، مما يمنع تحميل أحمال ضارة محتملة.</li>
+<li class="">
+<p><code>circuit_drawer</code>: يغيّر النظام الافتراضي لرسم الدائرة. يمكن ضبطه على <code>latex</code> أو <code>mpl</code> أو <code>text</code> أو <code>latex_source</code>. عندما لا يتم ضبط وسيطة output صراحةً، يُستخدم نظام الرسم هذا.</p>
+</li>
+<li class="">
+<p><code>circuit_mpl_style</code>: ورقة الأنماط الافتراضية المستخدمة لنظام إخراج mpl في رسم الدوائر. القيم الصالحة هي <code>default</code> أو <code>bw</code>.</p>
+</li>
+<li class="">
+<p><code>circuit_mpl_style_path</code>: المسارات التي يستخدمها رسم الدوائر للبحث عن أوراق أنماط JSON عند استخدام وضع إخراج mpl.</p>
+</li>
+<li class="">
+<p><code>state_drawer</code>: يُستخدم هذا لتغيير النظام الافتراضي لطرق رسم تصور الحالة. القيم الصالحة هي <code>repr</code> أو <code>text</code> أو <code>latex</code> أو <code>latex_source</code> أو <code>qsphere</code> أو <code>hinton</code> أو <code>bloch</code>. عندما لا يتم ضبط وسيطة output صراحةً على طريقة <a class="" href="/api/qiskit/qiskit.quantum_info.DensityMatrix#densitymatrix">qiskit.quantum_info.DensityMatrix.draw</a>، تُستخدم طريقة الإخراج المحددة.</p>
+</li>
+<li class="">
+<p><code>transpile_optimization_level</code>: يغيّر مستوى التحسين الافتراضي لـ <a class="" href="/api/qiskit/compiler#transpile">qiskit.compiler.transpile</a>. حدد عددًا صحيحًا من 0 إلى 3.</p>
+</li>
+<li class="">
+<p><code>parallel</code>: يحدد ما إذا كان معالجة Python المتوازية مفعّلة للعمليات التي تدعم التشغيل المتوازي. على سبيل المثال، تحويل كائنات <a class="" href="/api/qiskit/qiskit.circuit.QuantumCircuit#quantumcircuit-class">qiskit.circuit.QuantumCircuit</a> متعددة. يمكن تجاوز هذا الإعداد بمتغير البيئة <code>QISKIT_PARALLEL</code>. حدد قيمة منطقية.</p>
+</li>
+<li class="">
+<p><code>num_processes</code>: الحد الأقصى لعدد العمليات المتوازية التي يتم تشغيلها للعمليات المتوازية إذا كان التنفيذ المتوازي مفعّلًا. يمكن تجاوز هذا الإعداد بمتغير البيئة <code>QISKIT_NUM_PROCS</code>. حدد عددًا صحيحًا أكبر من <code>0</code>.</p>
+</li>
+<li class="">
+<p><code>min_qpy_version</code>: سيرفض تحميل QPY الملفات التي تحمل إصداراً من QPY أدنى من الإصدار المحدد هنا. يمكن استخدام هذا الخيار لتقييد إصدارات QPY المسموح بها عند اكتشاف مشكلات أمنية في إلغاء تسلسل إصدارات QPY القديمة، مما يمنع تحميل أحمال ضارة محتملة.</p>
+</li>
 </ul>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ملاحظة</div><div class="admonitionContent_BuS1"><ul>
 <li class="">إعدادات رسم الدوائر تنطبق على <a class="" href="/api/qiskit/qiskit.circuit.QuantumCircuit">qiskit.circuit.QuantumCircuit.draw</a> و<a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.visualization.circuit_drawer#qiskitvisualizationcircuit_drawer" target="_blank" rel="noopener noreferrer" class="">qiskit.visualization.circuit_drawer</a>.</li>
@@ -48,11 +64,21 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="environment-variables">متغيرات البيئة<a href="#environment-variables" class="hash-link" aria-label="رابط مباشر إلى متغيرات البيئة" title="رابط مباشر إلى متغيرات البيئة" translate="no">​</a></h2>
 <p>اضبط متغيرات البيئة هذه لتغيير السلوك الافتراضي لـ Qiskit:</p>
 <ul>
-<li class=""><code>QISKIT_PARALLEL</code>: يفعّل معالجة Python المتوازية لتوازي عمليات معينة؛ على سبيل المثال، التحويل عبر دوائر متعددة في Qiskit. حدد قيمة منطقية.</li>
-<li class=""><code>QISKIT_NUM_PROCS</code>: الحد الأقصى لعدد العمليات المتوازية التي يتم تشغيلها إذا كان التنفيذ المتوازي مفعّلًا. حدد عددًا صحيحًا أكبر من الصفر.</li>
-<li class=""><code>RAYON_NUM_THREADS</code>: عدد الخيوط (Threads) لتشغيل العمليات متعددة الخيوط في Qiskit. بشكل افتراضي، تُشغّل الشيفرة متعددة الخيوط خيطًا لكل وحدة معالجة منطقية. لضبط عدد الخيوط التي يستخدمها Qiskit، اضبط هذا المتغير على قيمة صحيحة. على سبيل المثال، يؤدي ضبط <code>RAYON_NUM_THREADS=4</code> إلى تشغيل أربعة خيوط للدوال متعددة الخيوط.</li>
-<li class=""><code>QISKIT_FORCE_THREADS</code>: يحدد أن الشيفرة متعددة الخيوط يجب أن تُنفَّذ دائمًا في خيوط متعددة. بشكل افتراضي، إذا كنت تشغّل شيفرة متعددة الخيوط في قسم من Qiskit يعمل بالفعل في عمليات متوازية، فإن Qiskit لا يُشغّل خيوطًا متعددة بل يُنفّذ تلك الدالة بشكل تسلسلي. يُفعل ذلك تجنبًا للضغط المحتمل على موارد المعالج المحدودة. ومع ذلك، إذا أردت إجبار استخدام خيوط متعددة حتى في سياق متعدد العمليات، اضبط <code>QISKIT_FORCE_THREADS=TRUE</code>.</li>
-<li class=""><code>QISKIT_SABRE_ALL_THREADS</code>: يتحكم في سلوك مرحلة التوزيع والتوجيه في مدير المسارات المعدّ مسبقًا في Qiskit. عند الضبط على <code>1</code> أو <code>TRUE</code>، يستخدم جميع وحدات المعالجة المتاحة لتشغيل تجارب عشوائية متعددة. يمكن أن يحسّن ذلك جودة النتائج، خاصةً للأنظمة التي تحتوي على أكثر من 20 وحدة معالجة/نواة؛ غير أن التنازل هو أن النتائج لا تكون قابلة للاستنساخ عند تشغيلها على أجهزة محلية مختلفة.</li>
+<li class="">
+<p><code>QISKIT_PARALLEL</code>: يفعّل معالجة Python المتوازية لتوازي عمليات معينة؛ على سبيل المثال، التحويل عبر دوائر متعددة في Qiskit. حدد قيمة منطقية.</p>
+</li>
+<li class="">
+<p><code>QISKIT_NUM_PROCS</code>: الحد الأقصى لعدد العمليات المتوازية التي يتم تشغيلها إذا كان التنفيذ المتوازي مفعّلًا. حدد عددًا صحيحًا أكبر من الصفر.</p>
+</li>
+<li class="">
+<p><code>RAYON_NUM_THREADS</code>: عدد الخيوط لتشغيل العمليات متعددة الخيوط في Qiskit. بشكل افتراضي، تُطلق الشيفرة متعددة الخيوط خيطًا لكل وحدة معالجة منطقية. لضبط عدد الخيوط التي يستخدمها Qiskit، اضبط هذا على قيمة عددية صحيحة. على سبيل المثال، ضبط RAYON_NUM_THREADS=4 يُطلق أربعة خيوط للدوال متعددة الخيوط.</p>
+</li>
+<li class="">
+<p><code>QISKIT_FORCE_THREADS</code>: يحدد أن الشيفرة متعددة الخيوط يجب أن تُنفَّذ دائمًا في خيوط متعددة. بشكل افتراضي، إذا كنت تشغّل شيفرة متعددة الخيوط في قسم من Qiskit يعمل بالفعل في عمليات متوازية، فإن Qiskit لا يُشغّل خيوطًا متعددة بل يُنفّذ تلك الدالة بشكل تسلسلي. يُفعل ذلك تجنبًا للضغط المحتمل على موارد المعالج المحدودة. ومع ذلك، إذا أردت إجبار استخدام خيوط متعددة حتى في سياق متعدد العمليات، اضبط <code>QISKIT_FORCE_THREADS=TRUE</code>.</p>
+</li>
+<li class="">
+<p><code>QISKIT_SABRE_ALL_THREADS</code>: يتحكم في سلوك مرحلة التوزيع والتوجيه في مدير المسارات المعدّ مسبقًا في Qiskit. عند الضبط على <code>1</code> أو <code>TRUE</code>، يستخدم جميع وحدات المعالجة المتاحة لتشغيل تجارب عشوائية متعددة. يمكن أن يحسّن ذلك جودة النتائج، خاصةً للأنظمة التي تحتوي على أكثر من 20 وحدة معالجة/نواة؛ غير أن التنازل هو أن النتائج لا تكون قابلة للاستنساخ عند تشغيلها على أجهزة محلية مختلفة.</p>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">الخطوات التالية<a href="#next-steps" class="hash-link" aria-label="رابط مباشر إلى الخطوات التالية" title="رابط مباشر إلى الخطوات التالية" translate="no">​</a></h2>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>توصيات</div><div class="admonitionContent_BuS1"><ul>
