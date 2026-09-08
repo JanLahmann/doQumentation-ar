@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.78445676.css">
-<script src="/assets/js/runtime~main.09c12d3f.js" defer="defer"></script>
-<script src="/assets/js/main.afa2e894.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.0f33d34c.js" defer="defer"></script>
+<script src="/assets/js/main.8f3c48bd.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/modules/computer-science/quantum-key-distribution" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -114,11 +114,11 @@ VMLFTS.</p>
 <!-- -->الخطوة 5: سلّم شريكك تسلسل الأرقام الذي يرمّز كلمتك السرية، وسيسلّمك شريكك تسلسله. <br>
 <!-- -->الخطوة 6: فكّ تشفير كلمة كل منكما باستخدام الطرح بحساب نظام modulo 26. <br>
 <!-- -->الخطوة 7: تحقق. هل نجح الأمر؟</p><h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="follow-up">متابعة<a href="#follow-up" class="hash-link" aria-label="رابط مباشر إلى متابعة" title="رابط مباشر إلى متابعة" translate="no">​</a></h4><p>تبادل الكلمات المشفرة مع مجموعة مختلفة لا تمتلك لوحة الاستخدام الواحد الخاصة بك. هل يمكنك فك تشفيرها؟ اشرح لماذا أم لماذا لا؟</p></div></div>
-<p>Hopefully the activity above makes it clear that a one-time pad is an unbreakable form of encryption, given a few assumptions, like:</p>
+<p>نأمل أن يكون النشاط أعلاه قد وضّح أن الحشو لمرة واحدة (one-time pad) هو شكل تشفير غير قابل للكسر، بشرط توفر بعض الافتراضات، مثل:</p>
 <ul>
-<li class="">The key is the same length as the message being sent, or longer</li>
-<li class="">The key is truly random</li>
-<li class="">The key is used only once and then discarded</li>
+<li class="">أن يكون المفتاح بنفس طول الرسالة المرسلة، أو أطول</li>
+<li class="">أن يكون المفتاح عشوائيًا حقًا</li>
+<li class="">أن يُستخدم المفتاح مرة واحدة فقط ثم يُتخلص منه</li>
 </ul>
 <p>نأمل أن النشاط أعلاه يوضح أن لوحة الاستخدام الواحد هي شكل من أشكال التشفير الذي لا يمكن كسره، بافتراض بعض الشروط، مثل:</p>
 <ul>
