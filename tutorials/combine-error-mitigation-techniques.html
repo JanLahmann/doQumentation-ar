@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.d21a9817.js" defer="defer"></script>
-<script src="/assets/js/main.3b4ebe28.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.52cb82d0.js" defer="defer"></script>
+<script src="/assets/js/main.4a4d6226.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/tutorials/combine-error-mitigation-techniques" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/tutorials/combine-error-mitigation-techniques" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -28,7 +28,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-outcomes">نتائج التعلم<a href="#learning-outcomes" class="hash-link" aria-label="رابط مباشر إلى نتائج التعلم" title="رابط مباشر إلى نتائج التعلم" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p>How dynamical decoupling, measurement error mitigation, gate twirling, and zero-noise extrapolation are selectively implemented on hardware.</p>
+<p>كيفية تطبيق الفصل الديناميكي، وتخفيف أخطاء القياس، وتدوير البوابات، والاستقراء عند انعدام الضوضاء بشكل انتقائي على الأجهزة.</p>
 </li>
 <li class="">
 <p>كيف تتباين هذه التقنيات من حيث قدرتها على تخفيف ضوضاء الأجهزة.</p>
@@ -36,7 +36,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">المتطلبات الأساسية<a href="#prerequisites" class="hash-link" aria-label="رابط مباشر إلى المتطلبات الأساسية" title="رابط مباشر إلى المتطلبات الأساسية" translate="no">​</a></h2>
 <ul>
-<li class="">The basics of dynamical decoupling, measurement error mitigation, gate twirling, and zero-noise extrapolation, as described in this <a class="" href="/guides/error-mitigation-and-suppression-techniques">guide</a>.</li>
+<li class="">أساسيات الفصل الديناميكي، وتخفيف أخطاء القياس، وتدوير البوابات، والاستقراء عند انعدام الضوضاء، كما هو موضح في هذا <a class="" href="/guides/error-mitigation-and-suppression-techniques">الدليل</a>.</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="background">الخلفية<a href="#background" class="hash-link" aria-label="رابط مباشر إلى الخلفية" title="رابط مباشر إلى الخلفية" translate="no">​</a></h2>
 <p>يستكشف هذا الدرس التعليمي خيارات قمع الأخطاء وتخفيفها المتاحة مع أداة Estimator الأساسية من IBM Quantum. يوضح هذا الدرس التعليمي كيفية تطبيق كل من الأساليب التالية بشكل مستقل:</p>
