@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.37e12940.js" defer="defer"></script>
-<script src="/assets/js/main.e4812b97.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.3716eeb3.js" defer="defer"></script>
+<script src="/assets/js/main.2b56c656.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/qiskit-sdk-version-strategy" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/qiskit-sdk-version-strategy" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -46,28 +46,28 @@
 لذلك الإصدار الرئيسي.
 يُنشر إصدار تصحيح نهائي عند إيقاف الدعم، ويوثّق ذلك الإصدار
 نهاية دعم سلسلة ذلك الإصدار الرئيسي. تُعدّ فترة الدعم الأطول
-للإصدار الرئيسي السابق ضرورية لمنح مستخدمي Qiskit في المشاريع
-المجاورة وقتاً كافياً لترحيل كودهم البرمجي.
-لا ينبغي للمكتبات المجاورة التي
+للإصدار الرئيسي السابق ضرورية لمنح المشاريع المعتمدة على Qiskit
+ومستخدميها فرصة لترحيل كودهم البرمجي.
+لا ينبغي للمكتبات اللاحقة التي
 تعتمد على Qiskit أن ترفع الحدّ الأدنى لإصدار Qiskit المطلوب إلى إصدار
 رئيسي جديد مباشرةً عقب إطلاقه، لأن قاعدة مستخدمي المكتبة تحتاج إلى وقت
 للتكيّف مع تغييرات API الجديدة. إن توفير نافذة دعم ممتدة
-للإصدار الرئيسي السابق من Qiskit يمنح المشاريع المجاورة وقتاً لضمان
+للإصدار الرئيسي السابق من Qiskit يمنح المشاريع اللاحقة وقتاً لضمان
 التوافق مع الإصدار الرئيسي القادم. ويمكن لهذه المشاريع دعم
 سلسلتَي إصدار في آنٍ واحد لإتاحة مسار ترحيل لمستخدميها.</p>
 <p>لأغراض الإصدار الدلالي (Semantic Versioning)، تُعدّ واجهة برمجة التطبيقات
-العامة في Qiskit أي وحدة (module) أو صنف (class) أو دالة أو وسيلة (method)
+العامة في Qiskit أي وحدة (module) أو صنف (class) أو دالة أو طريقة (method)
 موثّقة وغير مُعلَّمة كخاصة (بادئة <code>_</code> بالشرطة السفلية). غير أنه يمكن
 وجود استثناءات صريحة لبعض واجهات برمجة التطبيقات الموثّقة. في مثل هذه
 الحالات، ستكون هذه الواجهات موثّقة بوضوح على أنها لا تُعدّ واجهات مستقرة
 بعد، وسيصدر تحذير مرئي للمستخدم عند أي استخدام لهذه الواجهات غير المستقرة.
 علاوة على ذلك، في بعض الحالات تُعدّ واجهة مُعلَّمة كخاصة جزءاً من واجهة
 برمجة التطبيقات العامة. عادةً لا يحدث ذلك إلا في حالتَين: إما تعريف واجهة
-مجردة (abstract interface) حيث يُقصد من الأصناف الفرعية تجاوز/تنفيذ وسيلة
-خاصة كجزء من تعريف التطبيق، أو وسائل منخفضة المستوى للاستخدام المتقدم
-ذات واجهات مستقرة لكنها غير آمنة للاستخدام العام،
+مجردة (abstract interface) حيث يُقصد من الأصناف الفرعية تجاوز/تنفيذ طريقة
+خاصة كجزء من تعريف التطبيق، أو طرق منخفضة المستوى للاستخدام المتقدم
+ذات واجهات مستقرة لكنها لا تُعدّ آمنة للاستخدام،
 إذ يقع على عاتق المستخدم الحفاظ على ثوابت الصنف/الأمان بنفسه
-(المثال الكنسي على ذلك هو وسيلة <code>QuantumCircuit._append</code>).</p>
+(المثال النموذجي على ذلك هو الطريقة <code>QuantumCircuit._append</code>).</p>
 <p>إصدارات Python المدعومة، والحدّ الأدنى لإصدار Rust المدعوم (لبناء
 Qiskit من المصدر)، وأي حزم تبعيات Python (بما في ذلك الحدود
 الدنيا لإصداراتها) التي يستخدمها Qiskit، لا تندرج ضمن ضمانات
@@ -83,11 +83,11 @@ Qiskit من المصدر)، وأي حزم تبعيات Python (بما في ذل�
 هو الترقية أولاً إلى أحدث إصدار ثانوي على الإصدار الرئيسي
 السابق. قُبيل إطلاق إصدار رئيسي جديد، سيُنشر إصدار ثانوي
 نهائي. هذا الإصدار الثانوي النهائي <code>X.Y+1.0.0</code> مكافئ لـ
-<code>X.Y.0</code> لكن مع تحذيرات إيقاف (deprecation warnings) لأي تغييرات
+<code>X.Y.0</code> لكن مع تحذيرات إهمال (deprecation warnings) لأي تغييرات
 في API ستُجرى في سلسلة الإصدار الرئيسي الجديد.</p>
-<p>على سبيل المثال، قُبيل إطلاق الإصدار 1.0.0 مباشرةً، يُنشر الإصدار 0.46.0. يكون الإصدار 0.46.0 مكافئاً للإصدار 0.45.0 لكنه يتضمن تحذيرات إيقاف إضافية توثّق تغييرات API التي أُجريت ضمن الإصدار 1.0.0. ينطبق هذا النمط على أي إصدارات رئيسية.</p>
+<p>على سبيل المثال، قُبيل إطلاق الإصدار 1.0.0 مباشرةً، يُنشر الإصدار 0.46.0. يكون الإصدار 0.46.0 مكافئاً للإصدار 0.45.0 لكنه يتضمن تحذيرات إهمال إضافية توثّق تغييرات API التي أُجريت ضمن الإصدار 1.0.0. ينطبق هذا النمط على أي إصدارات رئيسية.</p>
 <p>يُنصح مستخدمو Qiskit بالترقية أولاً إلى هذا الإصدار
-الثانوي النهائي لرؤية أي تحذيرات إيقاف وضبط استخدامهم لـ Qiskit
+الثانوي النهائي لرؤية أي تحذيرات إهمال وضبط استخدامهم لـ Qiskit
 قبل تجربة إصدار قد يحمل تغييرات جذرية. سيُدعم الإصدار
 الرئيسي السابق لمدة لا تقل عن ستة أشهر لمنح وقت كافٍ
 للترقية. من الأنماط الشائعة لإدارة ذلك تحديد حدٍّ أقصى للإصدار
@@ -96,7 +96,7 @@ Qiskit من المصدر)، وأي حزم تبعيات Python (بما في ذل�
 الرئيسي الحالي هو 1 يضمن استخدام إصدار من Qiskit
 لا يحمل تغييرات جذرية في API.</p>
 <p>تحديد سقف للإصدار أقل من الإصدار الرئيسي القادم
-يضمن رؤية أي تحذيرات إيقاف قبل
+يضمن رؤية أي تحذيرات إهمال قبل
 إطلاق إصدار رئيسي.
 بدون هذا السقف، يثبّت <code>pip</code>
 أحدث إصدار متاح بشكل افتراضي.</p>
@@ -108,8 +108,8 @@ Qiskit من المصدر)، وأي حزم تبعيات Python (بما في ذل�
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pre-releases">الإصدارات التجريبية<a href="#pre-releases" class="hash-link" aria-label="رابط مباشر إلى الإصدارات التجريبية" title="رابط مباشر إلى الإصدارات التجريبية" translate="no">​</a></h2>
 <p>لكل إصدار ثانوي ورئيسي، ينشر Qiskit إصدارات تجريبية
 متوافقة مع <a href="https://peps.python.org/pep-0440/" target="_blank" rel="noopener noreferrer" class="">PEP440</a>. عادةً
-تأخذ شكل مرشحات الإصدار (release candidates) على هيئة <code>X.Y.0rc1</code>. تمتلك إصدارات <code>rc</code>
-سطحاً نهائياً لـ API وتُستخدم لاختبار الإصدار المرتقب.</p>
+تأخذ شكل مرشحات الإصدار (release candidates) على هيئة <code>X.Y.0rc1</code>. تكون واجهة API في إصدارات <code>rc</code>
+قد اكتملت نهائياً وتُستخدم لاختبار الإصدار المرتقب.</p>
 <p>لاحظ أنه حين يُنشر أحد لاحقات PEP440 التجريبية (مثل <code>a</code> أو <code>b</code> أو <code>pre</code>)، فإنها لا تحمل نفس ضمانات إصدار <code>rc</code>، وهي مجرد إصدارات معاينة. قد يتغيّر API بين هذه الإصدارات التجريبية والإصدار النهائي بنفس رقم الإصدار. على سبيل المثال، قد يكون لـ <code>X.0.0pre1</code> API مختلف عن الإصدار النهائي <code>X.0.0</code>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="post-releases">الإصدارات اللاحقة<a href="#post-releases" class="hash-link" aria-label="رابط مباشر إلى الإصدارات اللاحقة" title="رابط مباشر إلى الإصدارات اللاحقة" translate="no">​</a></h2>
 <p>إن وُجدت مشكلات في تغليف أحد الإصدارات، قد يُصدر إصدار لاحق
