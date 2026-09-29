@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.fc4c1230.js" defer="defer"></script>
-<script src="/assets/js/main.ccac6e09.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4885d65b.js" defer="defer"></script>
+<script src="/assets/js/main.c5de77db.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/quantum-diagonalization-algorithms/introduction" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -27,8 +27,8 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview-and-motivation">نظرة عامة والدافع<a href="#overview-and-motivation" class="hash-link" aria-label="رابط مباشر إلى نظرة عامة والدافع" title="رابط مباشر إلى نظرة عامة والدافع" translate="no">​</a></h2>
 <p>مرحبًا بك في دورة خوارزميات القطرنة الكمومية!</p>
 <p>العالم مليء بمسائل بالغة الأهمية يمكن صياغتها على شكل مسائل قطرنة مصفوفات. يمتد هذا عبر مجالات تتراوح من التمويل إلى الفيزياء، وينطبق على أنظمة متباينة كالمواقع الكيميائية الرابطة وشبكات التوزيع. حتى أساليب حل المسائل الأخرى كالتعلم الآلي تستثمر قوة المصفوفات. وقد أتاحت التقدمات في الحوسبة الكلاسيكية قطرنة مصفوفات ذات أحجام مذهلة. لكن لا تزال هناك مسائل تتجاوز حدود خوارزميات القطرنة الكلاسيكية الدقيقة.</p>
-<p>تستثمر خوارزميات القطرنة الكمومية (QDAs) قوة الحواسيب الكمية جنبًا إلى جنب مع المقاربات الكلاسيكية. ويعني هذا أشياء مختلفة لخوارزميات مختلفة. في بعض الحالات، تستخدم الخوارزمية الحاسوب الكمي لتقدير قيم توقع المصفوفات وتستخدم الحواسيب الكلاسيكية لتشغيل خوارزميات التحسين التغايري. هذا صحيح، على سبيل المثال، لمحلّ القيم الذاتي الكمي التغايري (VQE). وفي حالات أخرى، تُستخدم القياسات الكمية لتحديد الفضاءات الجزئية المناسبة لإسقاط المصفوفة المعنية فيها، ويُجرى قطرنة المصفوفة المُسقَطة كليًا على الحواسيب الكلاسيكية. هذا ما تصفه طرق القطرنة الكمومية القائمة على أخذ العينات (SQD)، وهي من أكثر الطرق إثارةً في العصر الحالي للحوسبة الكمية.</p>
-<p>تُقدم هذه الدورة نظرة عامة على عدة مقاربات للقطرنة الكمي. نُزوّدك بخلفية عن الطرق الكلاسيكية المستخدمة، أو تلك التي ألهمت الخوارزميات الكمية، ونستعرض خطوة بخطوة تنفيذ الخوارزميات الكمية على حواسيب كمية حقيقية. ثمة نقاش مستفيض حول العوامل التي تُحدد أسلوب تحجيم المقاربات التي تستخدم الخوارزميات الكلاسيكية والكمية. وهذا أمر بالغ الأهمية لتحديد ما إذا كانت مسألتك تستفيد من خوارزمية كمية بعينها. من خلال ربط المقاربات الرياضية المجردة بأحدث الأجهزة الكمية، تُمكّن المنهجية المشاركين من التعامل مع المشهد الكمي الحسابي المتطور بسرعة.</p>
+<p>تستثمر خوارزميات القطرنة الكمومية (QDAs) قوة الحواسيب الكمومية جنبًا إلى جنب مع المقاربات الكلاسيكية. ويعني هذا أشياء مختلفة لخوارزميات مختلفة. في بعض الحالات، تستخدم الخوارزمية الحاسوب الكمومي لتقدير قيم توقع المصفوفات وتستخدم الحواسيب الكلاسيكية لتشغيل خوارزميات التحسين التغايري. هذا صحيح، على سبيل المثال، لمحلّ القيم الذاتي الكمومي التغايري (VQE). وفي حالات أخرى، تُستخدم القياسات الكمومية لتحديد الفضاءات الجزئية المناسبة لإسقاط المصفوفة المعنية فيها، وتُجرى قطرنة المصفوفة المُسقَطة كليًا على الحواسيب الكلاسيكية. هذا ما تصفه طرق القطرنة الكمومية القائمة على أخذ العينات (SQD)، وهي من أكثر الطرق إثارةً في العصر الحالي للحوسبة الكمومية.</p>
+<p>تُقدم هذه الدورة نظرة عامة على عدة مقاربات للقطرنة الكمومية. نُزوّدك بخلفية عن الطرق الكلاسيكية المستخدمة، أو تلك التي ألهمت الخوارزميات الكمومية، ونستعرض خطوة بخطوة تنفيذ الخوارزميات الكمومية على حواسيب كمومية حقيقية. ثمة نقاش مستفيض حول العوامل التي تُحدد أسلوب تحجيم المقاربات التي تستخدم الخوارزميات الكلاسيكية والكمومية. وهذا أمر بالغ الأهمية لتحديد ما إذا كانت مسألتك تستفيد من خوارزمية كمومية بعينها. من خلال ربط المقاربات الرياضية المجردة بأحدث الأجهزة الكمومية، يُمكّن المنهج المشاركين من مواكبة التقنيات الحسابية الكمومية سريعة التطور.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-learning-goals">أهداف تعلم الدورة<a href="#course-learning-goals" class="hash-link" aria-label="رابط مباشر إلى أهداف تعلم الدورة" title="رابط مباشر إلى أهداف تعلم الدورة" translate="no">​</a></h2>
 <p>من خلال إتمام هذه الدورة، يمكنك توقع بناء المهارات والكفاءات الأساسية التالية. سيتمكن المتعلمون من:</p>
 <ol>
@@ -36,7 +36,7 @@
 <p>تحديد عدة تطبيقات صناعية لقطرنة المصفوفات الكبيرة.</p>
 </li>
 <li class="">
-<p>تحديد عدة مقاربات كلاسيكية للقطرنة ونظيراتها الكمية.</p>
+<p>تحديد عدة مقاربات كلاسيكية للقطرنة ونظيراتها الكمومية.</p>
 </li>
 <li class="">
 <p>شرح العوامل التي تُحدد كفاءة QDAs.</p>
@@ -54,7 +54,7 @@
 <p>تكييف مسألة نموذجية لتناسب مسألتهم الخاصة.</p>
 </li>
 <li class="">
-<p>معرفة قيود تنفيذ QDAs على الحواسيب الكمية قبل التسامح مع الأخطاء على نطاق واسع.</p>
+<p>معرفة قيود تنفيذ QDAs على الحواسيب الكمومية قبل بلوغ الحوسبة المتسامحة مع الأخطاء واسعة النطاق.</p>
 </li>
 </ol>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="course-structure">هيكل الدورة<a href="#course-structure" class="hash-link" aria-label="رابط مباشر إلى هيكل الدورة" title="رابط مباشر إلى هيكل الدورة" translate="no">​</a></h2>
@@ -72,7 +72,7 @@
 <p>الدرس 2: القطرنة الكمومية لكريلوف</p>
 </li>
 <li class="">
-<p>الدرس 3: القطرنة الكمومية القائم على أخذ العينات</p>
+<p>الدرس 3: القطرنة الكمومية القائمة على أخذ العينات</p>
 </li>
 <li class="">
 <p>الدرس 4: تطبيق SQD</p>
