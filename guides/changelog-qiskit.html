@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.6d192bc8.js" defer="defer"></script>
-<script src="/assets/js/main.a8abfa06.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.871a23ad.js" defer="defer"></script>
+<script src="/assets/js/main.a961293d.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/changelog-qiskit" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/changelog-qiskit" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -35,13 +35,13 @@
 <p><strong>تمريرات مترجم مخصصة في C</strong> - اكتب تمريرات مترجم مخصصة عبر C API الخاص بـ Qiskit باستخدام كائن <code>QkDag</code> الجديد وكائن <code>QkTarget</code> الموسّع، مما يتيح فحص وتعديل وتوسيع عملية الترجمة خطوة بخطوة - دون إعادة بناء خط أنابيب المترجم بالكامل.</p>
 </li>
 <li class="">
-<p><strong>اختيار أسرع لتخطيط الأجهزة</strong> - ترقيات وتحسينات أداء مدفوعة بـ Rust لـ <code>VF2Layout</code> و<code>VF2PostLayout</code> تحسّن سرعة وقابلية توسع اختيار تخطيط الدارة إلى الجهاز، مما يقلل من النفقات العامة للترجمة ويحسّن الدقة على الأجهزة الكمومية.</p>
+<p><strong>اختيار أسرع لتخطيط الأجهزة</strong> - ترقيات وتحسينات أداء مدفوعة بـ Rust لـ <code>VF2Layout</code> و<code>VF2PostLayout</code> تحسّن سرعة وقابلية توسع اختيار تخطيط الدارة إلى الجهاز، مما يقلل من العبء الإضافي للترجمة ويحسّن الدقة على الأجهزة الكمومية.</p>
 </li>
 <li class="">
 <p><strong>قياس Pauli جديد متعدد الكيوبتات</strong> - تتيح تعليمة <code>PauliProductMeasurement</code> الجديدة القياس الإسقاطي المشترك عبر عدة كيوبتات في عملية واحدة، مما يفتح الباب أمام الترجمة إلى الحوسبة القائمة على Pauli - وهو تمثيل شائع في الحوسبة الكمومية المتسامحة مع الأخطاء.</p>
 </li>
 <li class="">
-<p><strong>تحسينات في الترجمة المبكرة المتسامحة مع الأخطاء</strong> - تحسينات في الأداء والميزات للترجمة إلى الأهداف المبكرة المتسامحة مع الأخطاء - خصوصًا أهداف Clifford+T - تساعد المستخدمين على بناء خطوط أنابيب الترجمة بكفاءة أكبر لوحدات QPU المستقبلية.</p>
+<p><strong>تحسينات في الترجمة إلى الأجهزة المتسامحة مع الأخطاء في مراحلها المبكرة</strong> - تحسينات في الأداء والميزات للترجمة إلى الأهداف المتسامحة مع الأخطاء في مراحلها المبكرة - خصوصًا أهداف Clifford+T - تساعد المستخدمين على بناء خطوط أنابيب الترجمة بكفاءة أكبر لوحدات QPU المستقبلية.</p>
 </li>
 </ul>
 <p>تمنح هذه القدرات المطورين مرونة أكبر لتخصيص تحسينات الدارات الكمومية والتكامل مع سير عمل الحوسبة عالية الأداء الحالي. <a href="https://www.ibm.com/quantum/blog/qiskit-2-3-release-summary" target="_blank" rel="noopener noreferrer" class="">تفضل بزيارة المدونة</a> للاطلاع على الملخص التقني الكامل.</p>
