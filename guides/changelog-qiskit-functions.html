@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.7116ed91.js" defer="defer"></script>
-<script src="/assets/js/main.b77df258.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4139141b.js" defer="defer"></script>
+<script src="/assets/js/main.55aa7b28.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/changelog-qiskit-functions" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/changelog-qiskit-functions" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -35,7 +35,7 @@
 <p><strong>ما الجديد</strong></p>
 <ul>
 <li class="">
-<p>عند استدعاء <code>run()</code> على دالة، تتحقق الخدمة أولًا من ثلاثة أمور: أن مثيلك يمتلك سعة وقت تشغيل، وأنه يمكنك الوصول إلى الـ Backend الذي حددته، وأن هناك على الأقل Backend واحد متاحًا. إذا كان هناك خطأ ما، تحصل على خطأ واضح فورًا بدلًا من الانتظار في قائمة الانتظار.</p>
+<p>عند استدعاء <code>run()</code> على دالة، تتحقق الخدمة أولًا من ثلاثة أمور: أن مثيلك يمتلك سعة وقت تشغيل، وأنه يمكنك الوصول إلى الـ Backend الذي حددته، وأن هناك Backend واحدًا على الأقل متاحًا. إذا كان هناك خطأ ما، تحصل على خطأ واضح فورًا بدلًا من الانتظار في الطابور.</p>
 <p>يمكنك أيضًا التحقق من هذه الموارد بنفسك في أي وقت:</p>
 <ul>
 <li class="">
@@ -64,7 +64,7 @@
 <p>اختر Backend في الكود بدلًا من كتابة اسمه بشكل ثابت.</p>
 </li>
 <li class="">
-<p>اكتشف الأخطاء مبكرًا في خطوط الأنابيب ودفاتر الملاحظات بدلًا من الانتظار في قائمة الانتظار.</p>
+<p>اكتشف الأخطاء مبكرًا في خطوط الأنابيب ودفاتر الملاحظات بدلًا من الانتظار في الطابور.</p>
 </li>
 </ul>
 </li>

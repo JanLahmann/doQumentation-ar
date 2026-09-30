@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.7116ed91.js" defer="defer"></script>
-<script src="/assets/js/main.b77df258.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4139141b.js" defer="defer"></script>
+<script src="/assets/js/main.55aa7b28.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/guides/algorithmiq-tem" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/guides/algorithmiq-tem" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -41,7 +41,7 @@
 قناة الضوضاء الكلية المؤثرة على حالة المعالج الكمّي، ثم
 تطبيق الخريطة على نتائج القياسات الكاملة معلوماتياً المأخوذة من
 الحالة المشوّشة للحصول على مقدِّرات غير متحيزة للمراقِبات.</p>
-<p>كميزة إضافية، تستفيد TEM من القياسات الكاملة معلوماتياً لإتاحة
+<p>ومن مزايا TEM أنها تستفيد من القياسات الكاملة معلوماتياً لإتاحة
 الوصول إلى مجموعة واسعة من القيم التوقعية المخففة للمراقِبات، وتتمتع
 بتكاليف أخذ عينات مثلى على الأجهزة الكمّية، كما هو موضَّح في Filippov et
 al. (2023)، <a href="https://arxiv.org/abs/2307.11740" target="_blank" rel="noopener noreferrer" class="">arXiv:2307.11740</a>، وFilippov
@@ -63,7 +63,7 @@ et al. (2024)، <a href="https://arxiv.org/abs/2403.13542" target="_blank" rel="
 خطر إدخال أخطاء إضافية بسبب عيوب الأجهزة الكمّية.</li>
 <li class=""><strong>تقدير مراقِبات متعددة</strong>: بفضل القياسات الكاملة معلوماتياً،
 تقدّر TEM مراقِبات متعددة بكفاءة باستخدام بيانات القياس ذاتها من الحاسوب الكمّي.</li>
-<li class=""><strong>تخفيف أخطاء القراءة</strong>: تتضمن دالة TEM Qiskit أيضاً
+<li class=""><strong>تخفيف أخطاء القياس</strong>: تتضمن دالة Qiskit ‏TEM أيضاً
 <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.033154" target="_blank" rel="noopener noreferrer" class="">طريقة خاصة لتخفيف أخطاء القراءة</a>
 قادرة على تقليص أخطاء القراءة بشكل ملحوظ بعد تشغيل معايرة قصير.</li>
 <li class=""><strong>الدقة</strong>: تُحسّن TEM بشكل ملحوظ دقة وموثوقية
@@ -71,8 +71,8 @@ et al. (2024)، <a href="https://arxiv.org/abs/2403.13542" target="_blank" rel="
 </ol>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">الوصف<a href="#description" class="hash-link" aria-label="رابط مباشر إلى الوصف" title="رابط مباشر إلى الوصف" translate="no">​</a></h2>
 <p>تتيح دالة TEM الحصول على قيم توقعية مخففة للأخطاء لمراقِبات
-متعددة على دائرة كمّية بتكلفة أخذ عينات ضئيلة. تُقاس
-الدائرة باستخدام قياس ذو قيم مؤثرات موجبة كامل معلوماتياً (IC-POVM)،
+متعددة على دائرة كمّية بالحد الأدنى من تكلفة أخذ العينات. تُقاس
+الدائرة باستخدام قياسٍ ذي قيمٍ مؤثِّرية موجبة وكاملٍ معلوماتياً (IC-POVM)،
 وتُعالَج نتائج القياسات المجمّعة على حاسوب كلاسيكي. يُستخدم هذا القياس لتطبيق
 طرق شبكة الموترات وبناء خريطة عكس الضوضاء. تطبّق الدالة خريطة تعكس
 الدائرة المشوّشة بالكامل باستخدام شبكات الموترات لتمثيل الطبقات المشوّشة.</p>
