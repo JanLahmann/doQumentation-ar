@@ -14,8 +14,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.728a878f.css">
-<script src="/assets/js/runtime~main.29a53bae.js" defer="defer"></script>
-<script src="/assets/js/main.6390c8b7.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9bebb784.js" defer="defer"></script>
+<script src="/assets/js/main.474f8c43.js" defer="defer"></script>
 <link data-rh-hreflang rel="alternate" hreflang="en" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="de" href="https://de.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="es" href="https://es.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="fr" href="https://fr.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="it" href="https://it.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="pt" href="https://pt.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ja" href="https://ja.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="fil" href="https://tl.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ar" href="https://ar.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="he" href="https://he.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ms" href="https://ms.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="id" href="https://id.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="th" href="https://th.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ko" href="https://ko.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="pl" href="https://pl.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="ro" href="https://ro.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="uk" href="https://uk.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="cs" href="https://cs.doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /><link data-rh-hreflang rel="alternate" hreflang="x-default" href="https://doqumentation.org/learning/courses/quantum-computing-in-practice/utility-scale-qaoa" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -119,13 +119,13 @@
 <p>الآن أصبحنا شبه مستعدّين لتشغيل الدائرة — أعدك! لكن أولاً، من المهم ملاحظة أنه يمكنك إرسال مهمتك بعدة طرق مختلفة تُسمى أوضاع التنفيذ.</p>
 <ul>
 <li class="">
-<p>وضع المهمة: يُقدَّم طلب primitive واحد من المُقدِّر أو أداة الأخذ من العينات دون مدير سياق. تُعبَّأ الدوائر والمدخلات كوحدات primitive موحّدة (PUBs) وتُقدَّم كمهمة تنفيذ على الحاسوب الكمي.</p>
+<p>Job mode: يُقدَّم طلب primitive واحد من المُقدِّر أو أداة الأخذ من العينات دون مدير سياق. تُعبَّأ الدوائر والمدخلات كوحدات primitive موحّدة (PUBs) وتُقدَّم كمهمة تنفيذ على الحاسوب الكمي.</p>
 </li>
 <li class="">
-<p>وضع الدُّفعة: مدير متعدد المهام لتشغيل تجربة بكفاءة مكوّنة من مجموعة من المهام المستقلة. استخدم وضع الدُّفعة لتقديم مهام primitive متعددة في آنٍ واحد.</p>
+<p>Batch mode: مدير متعدد المهام لتشغيل تجربة بكفاءة مكوّنة من مجموعة من المهام المستقلة. استخدم batch mode لتقديم مهام primitive متعددة في آنٍ واحد.</p>
 </li>
 <li class="">
-<p>وضع الجلسة: نافذة مخصصة لتشغيل عبء عمل متعدد المهام. يتيح هذا للمستخدمين تجربة الخوارزميات التغايرية بطريقة أكثر قابلية للتنبؤ، بل وتشغيل تجارب متعددة في آنٍ واحد، مستفيدين من التوازية في المكدس. استخدم الجلسات لأعباء العمل التكرارية أو التجارب التي تتطلب وصولاً مخصصاً. انظر تشغيل المهام في جلسة للاطلاع على أمثلة.</p>
+<p>Session mode: نافذة مخصصة لتشغيل عبء عمل متعدد المهام. يتيح هذا للمستخدمين تجربة الخوارزميات التغايرية بطريقة أكثر قابلية للتنبؤ، بل وتشغيل تجارب متعددة في آنٍ واحد، مستفيدين من التوازية في المكدس. استخدم الجلسات لأعباء العمل التكرارية أو التجارب التي تتطلب وصولاً مخصصاً. انظر تشغيل المهام في جلسة للاطلاع على أمثلة.</p>
 </li>
 </ul>
 <p>لتجربة QAOA، تعدّ الجلسة خياراً جيداً إذا كان لديك وصول إليها، إذ نحتاج إلى أخذ عينات من دائرتنا مرات عديدة بقيم معاملات مختلفة لإيجاد الحد الأمثل.</p>
