@@ -16,8 +16,8 @@
 <script src="/runtime-config.js"></script>
 <script src="/umami-before-send.js"></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org,de.doqumentation.org,es.doqumentation.org,uk.doqumentation.org,fr.doqumentation.org,it.doqumentation.org,pt.doqumentation.org,ja.doqumentation.org,tl.doqumentation.org,ar.doqumentation.org,he.doqumentation.org,ms.doqumentation.org,id.doqumentation.org,th.doqumentation.org,ko.doqumentation.org,pl.doqumentation.org,ro.doqumentation.org,cs.doqumentation.org" data-before-send="fwqUmamiBeforeSend"></script><link rel="stylesheet" href="/assets/css/styles.52182a45.css">
-<script src="/assets/js/runtime~main.187c89ec.js" defer="defer"></script>
-<script src="/assets/js/main.61a22145.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.29a58144.js" defer="defer"></script>
+<script src="/assets/js/main.6aae7a82.js" defer="defer"></script>
 <meta data-dq-mirror-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -45,13 +45,13 @@
 <ul>
 <li class="">
 <p><strong>يوفّر <a class="" href="/guides/directed-execution-model">نموذج التنفيذ الموجّه</a> أدوات جديدة لفحص سير عمل تخفيف الأخطاء وتخصيصه</strong> — تم بناء أدوات جديدة فوق إطار نموذج التنفيذ الموجّه الذي صدر في وقت سابق من هذا العام:</p>
-<p>Together with <a class="" href="/addons/samplomatic">Samplomatic</a>, they make up the <a class="" href="/guides/directed-execution-model">directed execution model</a>, which provides full transparency and control to fine-tune your error mitigation workflow. The <a class="" href="/addons/qiskit-addon-slc/guides/quickstart">Probabilistic error cancellation with shaded lightcones</a> tutorial, for example, demonstrates how this model is used to combine advanced techniques, including shaded lightcones, probabilistic error cancellation (PEC), Twirled Readout Error eXtinction (TREX), and <a class="" href="/addons/qiskit-mitigation/guides/postselection-with-non-markovian-error-checks">measurement-based postselection</a>, to further improve the result quality.</p>
+<p>تشكّل هذه الأدوات، إلى جانب <a class="" href="/addons/samplomatic">Samplomatic</a>، <a class="" href="/guides/directed-execution-model">نموذج التنفيذ الموجّه</a>، الذي يوفّر شفافية وتحكمًا كاملين لضبط سير عمل تخفيف الأخطاء بدقة. يوضّح البرنامج التعليمي <a class="" href="/addons/qiskit-addon-slc/guides/quickstart">Probabilistic error cancellation with shaded lightcones</a>، على سبيل المثال، كيفية استخدام هذا النموذج للجمع بين تقنيات متقدمة، منها المخاريط الضوئية المظلّلة، وإلغاء الخطأ الاحتمالي (PEC)، وإخماد خطأ القراءة باستخدام التلفيف العشوائي (Twirled Readout Error eXtinction, TREX)، و<a class="" href="/addons/qiskit-mitigation/guides/postselection-with-non-markovian-error-checks">الاختيار اللاحق القائم على القياس</a>، لتحسين جودة النتيجة أكثر.</p>
 <ul>
 <li class="">
-<p><a class="" href="/addons/qiskit-noise-learning"><code>qiskit-noise-learning</code></a> is a toolkit for randomization-based quantum noise characterization. You can use it to construct a custom noise-learning experiment, validate it with local simulation, and analyze the raw results.</p>
+<p><a class="" href="/addons/qiskit-noise-learning"><code>qiskit-noise-learning</code></a> هي مجموعة أدوات لتوصيف الضجيج الكمومي القائم على العشوائية. يمكنك استخدامها لبناء تجربة مخصصة لتعلّم الضجيج، والتحقق منها بالمحاكاة المحلية، وتحليل النتائج الخام.</p>
 </li>
 <li class="">
-<p><a class="" href="/addons/qiskit-mitigation"><code>qiskit-mitigation</code></a> is a package of quantum error mitigation methods for building mitigation pipelines with the new execution model. It includes implementations of well-known methods, including PEC, PEA, TREX, and gate-folding ZNE, as well as post-selection for filtering out non-Markovian errors.</p>
+<p><a class="" href="/addons/qiskit-mitigation"><code>qiskit-mitigation</code></a> هي حزمة من طرق تخفيف الأخطاء الكمومية لبناء مسارات التخفيف باستخدام نموذج التنفيذ الجديد. تتضمن تطبيقات لطرق معروفة، منها PEC وPEA وTREX وZNE القائم على طي البوابات، إضافة إلى الاختيار اللاحق (post-selection) لتصفية الأخطاء غير الماركوفية.</p>
 </li>
 <li class="">
 <p>أصدر <a href="https://docs.quantum.ibm.com/api/qiskit-ibm-runtime/release-notes#0500-2026-09-24" target="_blank" rel="noopener noreferrer" class=""><code>qiskit-ibm-runtime</code> v0.50.0</a> <strong>تطبيقات جديدة من جهة العميل لـ primitives من نوع Sampler وEstimator</strong> مبنية فوق هذا الإطار. تتيح لك هذه التطبيقات فحص طريقة تنفيذ كل طريقة لتخفيف الأخطاء بدقة، واختبارها <a class="" href="/guides/local-testing-mode">محليًا</a> قبل تشغيلها على QPU فعلية.</p>

@@ -16,8 +16,8 @@
 <script src="/runtime-config.js"></script>
 <script src="/umami-before-send.js"></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org,de.doqumentation.org,es.doqumentation.org,uk.doqumentation.org,fr.doqumentation.org,it.doqumentation.org,pt.doqumentation.org,ja.doqumentation.org,tl.doqumentation.org,ar.doqumentation.org,he.doqumentation.org,ms.doqumentation.org,id.doqumentation.org,th.doqumentation.org,ko.doqumentation.org,pl.doqumentation.org,ro.doqumentation.org,cs.doqumentation.org" data-before-send="fwqUmamiBeforeSend"></script><link rel="stylesheet" href="/assets/css/styles.52182a45.css">
-<script src="/assets/js/runtime~main.187c89ec.js" defer="defer"></script>
-<script src="/assets/js/main.61a22145.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.29a58144.js" defer="defer"></script>
+<script src="/assets/js/main.6aae7a82.js" defer="defer"></script>
 <meta data-dq-mirror-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -32,7 +32,7 @@
 <p>محسِّن المحفظة الكمية هو دالة Qiskit تتعامل مع مسألة تحسين المحفظة الاستثمارية الديناميكي، وهي مسألة معيارية في مجال التمويل تهدف إلى إعادة توازن الاستثمارات الدورية عبر مجموعة من الأصول بما يعظّم العائدات ويقلّل المخاطر. وبالاستعانة بأحدث تقنيات التحسين الكمي، تبسّط هذه الدالة العملية بحيث يتمكن المستخدمون، حتى من ليس لديهم خبرة في الحوسبة الكمية، من الاستفادة من مزاياها في إيجاد مسارات استثمارية مثلى. إنها أداة مثالية لمديري المحافظ والباحثين في مجال التمويل الكمي والمستثمرين الأفراد، إذ تتيح اختبار استراتيجيات التداول في مجال تحسين المحافظ بصورة رجعية.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="function-description">وصف الدالة<a href="#function-description" class="hash-link" aria-label="رابط مباشر إلى وصف الدالة" title="رابط مباشر إلى وصف الدالة" translate="no">​</a></h2>
 <p>تستخدم دالة محسِّن المحفظة الكمية خوارزمية Variational Quantum Eigensolver (VQE) لحل مسألة Quadratic Unconstrained Binary Optimization (QUBO)، بما يعالج مسائل تحسين المحفظة الاستثمارية الديناميكي. يكتفي المستخدمون بتوفير بيانات أسعار الأصول وتحديد قيد الاستثمار، ثم تُشغّل الدالة عملية التحسين الكمي التي تُعيد مجموعة من مسارات الاستثمار المثلى.</p>
-<p>The process consists of four main stages. First, the input data is mapped to a quantum-compatible problem, constructing the QUBO of the dynamic portfolio optimization problem, and transforming it into a quantum operator (Ising Hamiltonian). Next, the input problem and the VQE algorithm are adapted to be run in the quantum hardware. The VQE algorithm is then run on the quantum hardware, and finally, the results are post-processed to provide the optimal investment trajectories. The system also includes a noise-aware (<a class="" href="/addons/qiskit-addon-sqd">SQD</a>-based) post-processing to maximize the quality of the output.</p>
+<p>تتألف العملية من أربع مراحل رئيسية. أولاً، تُحوَّل بيانات الإدخال إلى مسألة متوافقة مع الحوسبة الكمية بإنشاء QUBO لمشكلة تحسين المحفظة الاستثمارية الديناميكي وتحويله إلى عامل كمي (Ising Hamiltonian). بعد ذلك، تُكيَّف المسألة المُدخَلة وخوارزمية VQE للتشغيل على الأجهزة الكمية. ثم تُشغَّل خوارزمية VQE على الأجهزة الكمية، وأخيراً تُعالَج النتائج لاستخراج مسارات الاستثمار المثلى. يتضمّن النظام أيضاً معالجةً لاحقةً مدركةً للضجيج (مستندةً إلى <a class="" href="/addons/qiskit-addon-sqd">SQD</a>) بهدف تعظيم جودة المخرجات.</p>
 <p>تستند دالة Qiskit هذه إلى <a href="https://arxiv.org/abs/2412.19150" target="_blank" rel="noopener noreferrer" class="">المخطوطة المنشورة</a> من قِبَل Global Data Quantum.
 <img decoding="async" loading="lazy" alt="تصوير لسير عمل الدالة" src="/assets/images/function_workflow-c87c42714c3fd188911c7aa56d50493c.svg" width="855" height="1290" class="img_ev3q"></p>
 <h1 id="get-started">ابدأ</h1>
